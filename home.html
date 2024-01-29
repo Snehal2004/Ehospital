@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by techo snehal.com -->
+    <title>Home Page</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--css begins-->
+    <style media="screen">
+      *,
+*:before,
+*:after{
+
+  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    background-position: center top;
+    background-color:skyblue;
+}
+
+h1{
+  font-size: 50px;
+}
+
+.logo{
+  width:150px;
+  cursor:pointer;
+  margin-left:5px;
+  height:150px;
+}
+.container{
+  width:100%;
+  height:100vh;
+  
+}
+.navbar{
+  height:18%;
+  display:flex;
+  
+}
+.navbar ul{
+  list-style:none;
+  padding:0;
+  margin-top:1px;
+  text-align:right;
+}
+nav{
+  flex:1;
+}
+
+.navbar li{
+  display:inline-block;
+}
+
+.navbar a{
+  text-decoration:none;
+  color:black;
+  width:125px;
+  display:block;
+  padding:27px 9px;
+  font-weight:bold;
+  font-family:arial;
+ 
+}
+.navbar a:hover{
+  background:white;
+
+}
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+
+form{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color:green;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color:#9ACD32;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    
+}
+::placeholder{
+    color: black;
+    
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color:#35d7ff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 20px;
+    border-radius: 12%;
+    cursor: pointer;
+    border:3px solid black;
+    font-weight:bold;
+}
+
+button:hover {
+  background-color:white;
+  color:black;
+  
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  
+  text-align: center;
+}
+.social div:hover{
+  background-color:pink;
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
+
+footer {
+  
+padding: 30px;
+background-color: white;
+
+}
+
+ul#menu li {
+display: inline-block;
+float: right;
+position: relative;
+margin-top: 28px; 
+margin-left: 10px;
+margin-right: 35px;
+
+}
+
+ul#menu li a {
+
+text-decoration: none;
+color: #808080;
+font-family: "Helvetica Neue";
+font-size: 15px;
+}
+
+#backgroundimage {
+background: url("images/background.jpg");
+width: 1000px;
+height: 500px;
+background-repeat: no-repeat;
+display: block;
+position: relative;
+background-position: 0 500px;
+} 
+
+a:link { text-decoration: none; }
+
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 90px;
+}
+
+
+
+
+
+/* About Section */
+.about {
+    
+    background:white;
+    padding: 100px;
+    text-align: center;
+    margin-top: 0px;
+    
+}
+ 
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color:blue;
+}
+ 
+.about p {
+    font-size: 1rem;
+    color: black;
+    max-width: 800px;
+    margin: 0 auto;
+}
+ 
+.about-info {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+ 
+.about-img {
+    width: 10rem;
+    height: 10rem;
+ 
+}
+ 
+.about-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    object-fit: contain;
+    cursor:pointer;
+}
+ 
+.about-info p {
+    font-size: 1.3rem;
+    margin-left:185px;
+    text-align: justify;
+    margin-top:50px;
+}
+.appshowing{
+  background-color:white;
+}
+
+
+/* Terms and condition section */
+.terms-container {
+      background: #f5f5f5;
+      padding: 50px;
+      text-align: justify;
+      margin-top: 20px;
+    }
+
+    .terms-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .terms-text {
+      font-size: 1rem;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+
+/* terms ends*/
+
+/* Doctor Section */
+        .doctors {
+            background: #f5f5f5;
+            padding: 50px;
+            text-align: center;
+            font-size:20px;
+        }
+
+        .doctor-card {
+            width: 200px;
+            margin: 20px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .doctor-image {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .doctor-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .doctor-name {
+            font-size: 19px;
+            font-weight: bold;
+            color: #333;
+        }
+
+          .doctor-card:not(:last-child) {
+          margin-right: 50px;
+
+          .doctor-specialty {
+          font-size: 16px;
+          margin-top: 5px;
+}
+}
+ <!----css ends --------->
+
+
+
+
+
+
+</style>
+</head>
+<!-----------------------------html begins --------------------------------->
+<body>
+
+      
+<div class="container">
+
+  
+  <div class="navbar">
+    <img src="images/logo.png" class="logo">
+    
+    <nav style="padding: 5px; margin-left: 200px;">
+
+    
+    <ul>
+        <li><i class="fa fa-envelope"></i> Email: snehalbahalkar2004 @gmail.com </li> 
+			
+
+
+        <li style="text-align: center;"><a href="http://localhost/ehospital/home.html">Home</a></li>
+        <li style="text-align: center;"><a href="http://localhost/ehospital/stafflogin/stafflogin.php">Staff login</a></li>
+        <li style="text-align: center;"><a href="http://localhost/ehospital/patientlogin/patientlogin.php">Patient login</a></li>
+        <li style="text-align: center;"><a href="http://localhost/ehospital/doctorlogin/doctorlogin.php">Doctor login</a></li>
+        
+        <li style="text-align: center;"><a href="http://localhost/ehospital/terms.html">Terms</a></li>
+
+        
+        
+       
+    </ul>
+    </nav>
+    
+  </div>
+  <div style="padding: 80px; font-family: Arial;2 color:white;">
+    <h2 style="font-size= 25px;">Welcome to <br></h2>
+    <div>
+   <h1 style="font-size=30px; color:#023e8a;">E-Hospital Management System</h1>
+   </div>
+    <p style="color: #080710;">Book your appointment from anywhere and anytime.</p>
+    <button style="width:fit-content; padding: 10px;  border-radius=200px"><a href="http://localhost/ehospital/patientlogin/patientlogin.php"> Book Appointment</button>
+  </div>
+  
+</div>
+</div>
+
+<div class="appshowing">
+</div>
+
+<!------------------------------footer ---------------------> 
+ 
+
+
+
+  
+  
+
+<!-- Doctors Section -->
+
+            <section class="doctors">
+                <h2>-------- Meet Our Doctors --------</h2><br><br>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="images/doctor1.jpg" alt="Doctor 1">
+                    </div>
+                    <div class="doctor-name">Dr. Satish Salunkhe</div>
+                    <div class="doctor-specialty">Cardiologist</div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="images/doctor2.jpg" alt="Doctor 2">
+                    </div>
+                    <div class="doctor-name">Dr. Namrata Joshi</div>
+                    <div class="doctor-specialty">Gynecologist</div>
+
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="images/doctor3.jpg" alt="Doctor 3">
+                    </div>
+                    <div class="doctor-name">Dr. James Johnson</div>
+                    <div class="doctor-specialty">Dermatologist</div>
+
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="images/doctor4.jpg" alt="Doctor 4">
+                    </div>
+                    <div class="doctor-name">Dr. Dev Davis</div>
+                    <div class="doctor-specialty">Dentist</div>
+                </div>
+            </section>
+
+    <!-----about us ----->
+<section class="about">
+		<h1>-------- About Us -------- </h1>
+		<p style="font-weight: bold">E-hospital is an leading platform.</p>
+		<div class="about-info">
+			<div class="about-img";>
+				<img src="images/logo.png" >
+			</div>
+			<div>
+	<p>  E-hospital Management System is an  website with handling medical records inside the hospital more specifically, 
+        the system aids in the management of medical information  and stocks.Evidently,this project has a staff/patient panel. 
+        A doctor can easily access the system by entering doctor id and password in staff panel. He or She is capable of 
+        managing patients.The staff can also view and control inventories.The staff can access each patients detailed 
+        information and reports using it.
+
+  </p>
+				
+			</div>
+		</div>
+	</section>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+      
