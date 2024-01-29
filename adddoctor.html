@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Add New Doctor</title>
+</head>
+<body>
+    <div class="container">
+        <img src="images/logo.png" alt="Website Logo" class="logo"> <!-- Add the logo here -->
+
+        <form class="add-doctor-form">
+            <h2>Add New Doctor</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+             <label for="speciality">Specialist</label>
+                <select name="speciality">
+                  <option value="accident and emergency">Accident and Emergency</option>
+                  <option value="cardiology">Cardiology</option>
+                  <option value="dermatology">Dermatology</option>
+                  <option value="general practice">General Practice</option>
+                  <option value="internal medicine">Internal Medicine</option>
+                  <option value="neurology">Neurology</option>
+                  <option value="orthopedics">Orthopedics</option>
+                  <option value="pediatrics">Pediatrics</option>
+                  <option value="psychiatry">Psychiatry</option>
+                  <option value="surgery">Surgery</option>
+                </select>
+<br>
+<br>
+            <button type="submit">Add Doctor</button>
+        </form>
+    </div>
+</body>
+</html>
